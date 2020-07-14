@@ -1,0 +1,34 @@
+<!-- Write the difference between var let and const -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Day_1 Assignment_2 based on var let const
+    </h2>
+    <script>
+        var city="pune";
+        console.log("Var output : ",city);
+        {
+            let city;
+            city="solapur";
+            console.log("Let output : ",city);
+        }
+        console.log("Output after var and let : "+city);
+    </script>
+    <script>
+        var city="pune";
+        console.log("Var output : ",city);
+        {
+            var city;
+            city="solapur";
+            console.log("Let output : ",city);
+        }
+        console.log("Output after var and let : "+city);
+    </script>
+</body>
+</html>
