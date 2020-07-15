@@ -1,0 +1,65 @@
+<!-- Explain with examples the remaining methods of String and Array -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Day_2 Assignment_2 based on based on string and array methods</h2> 
+   <script>
+       var str="Always say yes to learn new things ";
+       var len=str.length;//length property
+       console.log("String length : ",len);
+
+       var i=str.indexOf("s");//index start from 0
+       console.log("Index : "+i);
+
+       var l=str.lastIndexOf("say");
+       console.log("Last Index : "+l);
+
+       var loc=str.search("say");
+       console.log("Location : "+loc);
+
+       var slice=str.slice(5,13);//slice(start,end)
+       console.log("Slicing of string : "+slice);
+       slice=str.slice(7);
+       console.log("Slicing of string : "+slice); 
+
+       var substr=str.substring(5,13);//substring(start,end)//second parameter denotes length
+       console.log("SubString of string : "+substr);
+
+       var replace=str.replace("say" ,"said");
+       console.log("Rplacing : "+replace);
+
+       var repAll=str.replace(/a/g,"u");//  /g flag (global match)
+       console.log("Replace all : "+repAll);
+
+       var upc=str.toUpperCase();
+       console.log("Upper case : "+upc);
+
+       var lwc=str.toLowerCase();
+       console.log("Lower case : "+lwc);
+
+   </script>
+   <script>
+       var fruits=["Apple","banana","mango"];
+       console.log("Array : ",fruits);
+       var str=fruits.toString();
+       console.log("Array to string : "+str);
+
+       var str=fruits.join("&");
+       console.log("Joining by & : "+str);
+
+       var str=fruits.push("Strawberry");
+       console.log("Array  : "+fruits);
+
+       var str=fruits.pop();
+       console.log("Array : "+str);
+
+       var str=delete fruits[0];
+       console.log("Array element deleted: "+str);
+   </script>
+</body>
+</html>
