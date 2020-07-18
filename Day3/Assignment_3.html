@@ -31,6 +31,50 @@ Output : Marks are 50 and grade is B -->
         else{
             console.log("Marks are "+grade+" and grade is fail ");
         }
+    </script> 
+
+    <script>
+        let mark=prompt("Enter marks : ");
+        mark=mark/10;
+        switch(mark){
+            case 10:
+            console.log("Marks are "+mark+" and grade is O+");
+            break;
+            case 9:
+            console.log("Marks are "+mark+" and grade is O");
+            break;
+            case 8:
+            console.log("Marks are "+mark+" and grade is A+");
+            break;
+            case 7:
+            console.log("Marks are "+mark+" and grade is A");
+            break;
+            case 6:
+            console.log("Marks are "+mark+" and grade is B+");
+            break;
+            case 5:
+            console.log("Marks are "+mark+" and grade is B");
+            break;
+            case 4:
+            console.log("Marks are "+mark+" and grade is C");
+            break;
+            default:
+            console.log("Failed");
+            break;
+        }
+    </script> 
+
+    <script>console.log("Marks are "+grade+" and grade is fail ");
+        let grade=prompt("Enter marks : ");
+
+        let marks=(grade>=80)?("Marks are "+grade+" and grade is A+"):(grade<80 && grade>=60)?
+            ("Marks are "+grade+" and grade is A"):(grade<60 && grade>=50)?
+            ("Marks are "+grade+" and grade is B"):(grade<50 && grade>=40)?
+            ("Marks are "+grade+" and grade is C")
+            :("Marks are "+grade+" and grade is fail ");
+            console.log(marks);
     </script>
+
+    
 </body>
 </html>
