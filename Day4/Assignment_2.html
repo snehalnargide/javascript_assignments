@@ -1,0 +1,30 @@
+<!-- Destructure the following object
+const student={
+    name:"helsinki";
+    age:24,
+    projects:{
+        diceGame:"Two player dice game using javascript",
+    }
+} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Day_4 Assignment_2</h2>
+    <script>
+        const student={
+        name:"helsinki",
+        age:24,
+        projects:{
+             diceGame:"Two player dice game using javascript",
+         },
+        }
+        const {name,age,projects:{diceGame}}=student;
+        console.log(name,age,diceGame);
+    </script>
+</body>
+</html>
